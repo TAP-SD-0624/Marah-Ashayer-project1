@@ -1,0 +1,139 @@
+body{
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+.cards .card{
+    border: 0.5px solid #e6e0e0 ;
+    border-radius: 5%;
+    background-color: white;
+    width: 100%;
+    height: auto;
+
+}
+.cards{
+    display: flex;
+    gap: 1%;
+    padding: 1.2rem;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    
+}
+main{
+    background-color: #F0F9FF;
+    padding:0.5%;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+header > h4{
+    font-weight: 700;
+    color:rgb(68, 70, 214);
+    font-size: 1.3rem;
+    margin-top: 0.002%;
+}
+
+button{
+    border: 0.5px solid black;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
+}
+.buttons{
+    margin-top: 1%;
+}
+.welcome{
+    color:#03C180;
+    font-weight: 700;
+    font-size: 1.2rem;
+    
+}
+.underwelcome{
+    color: #7a7575;
+    font-weight: 700;
+    font-size: 90%;
+    line-height: 0.001em;
+    
+}
+.welcome_section{
+    text-align: center;
+    padding:12px 0px;
+    background-size:1em 1em,1em 1em , 100% 100%;
+    background: linear-gradient(40deg,#0768AC 0 , rgb(248, 248, 248) 65%, #03C180 50%);
+    min-height: 100%;
+
+}
+h6{
+    color: #7a7575;
+    font-weight: 700;
+}
+h3{
+    font-size: 0.8rem;
+    line-height: 0.001em;
+}
+.topics-found{
+    font-weight: 700;
+    margin-left: 1%;
+}
+.topic{
+    font-size: 0.6rem ;
+}
+.searchbar{
+    display: flex;
+    justify-content: space-between;
+    border: 0.5px solid #c0baba;
+    border-radius: 10px;
+    background-color: white;
+    padding: 0.1%;
+    margin: 1%;
+    align-items: center;
+}
+input {
+    border: none;
+    width: 100%;
+}
+.search{
+    display: flex;
+    margin-left: 1%;
+
+}
+select{
+    border: none;
+}
+.sort-filter{
+    display: flex;
+}
+.dropdown{
+    border-left:1px solid #c0baba;
+    background-color: white;
+    padding: 4px;
+}
+
+.stars ion-icon {
+    color: rgb(238, 147, 28);
+}
+.info{
+    margin-left: 5%;
+}
+footer{
+    text-align: center;
+    
+}
+footer ion-icon{
+    color: #DC143C;
+    
+}
+footer span{
+    border: 1px solid black;
+    border-radius: 70%;
+    text-align: center;
+    width: 1%;
+    line-height: 1%;
+}
