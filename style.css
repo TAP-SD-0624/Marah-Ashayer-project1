@@ -1,30 +1,48 @@
-body{
+* {
     font-family: "Nunito Sans", sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     
+    
+}
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 .cards .card{
     border: 0.5px solid #e6e0e0 ;
     border-radius: 5%;
     background-color: white;
-    width: 100%;
-    height: auto;
+    width: 18%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    width: calc(33.333% - 1rem);
+    
 
 }
 .cards{
     display: flex;
-    gap: 1%;
+    gap: 1rem;
     padding: 1.2rem;
 }
 img{
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    margin-bottom: 1rem;
+    object-fit: cover;
     
 }
 main{
     background-color: #F0F9FF;
-    padding:0.5%;
+    flex: 1;
+    margin-top: 1%;
 
 }
 header{
@@ -35,9 +53,9 @@ header{
 }
 header > h4{
     font-weight: 700;
-    color:rgb(68, 70, 214);
-    font-size: 1.3rem;
-    margin-top: 0.002%;
+    color:#0768AC;
+    font-size: 1.1rem;
+    margin-top: 0.005%;
 }
 
 button{
@@ -51,32 +69,29 @@ button{
 }
 .welcome{
     color:#03C180;
-    font-weight: 700;
     font-size: 1.2rem;
     
 }
 .underwelcome{
     color: #7a7575;
-    font-weight: 700;
     font-size: 90%;
-    line-height: 0.001em;
+
     
 }
 .welcome_section{
     text-align: center;
-    padding:12px 0px;
-    background-size:1em 1em,1em 1em , 100% 100%;
-    background: linear-gradient(40deg,#0768AC 0 , rgb(248, 248, 248) 65%, #03C180 50%);
-    min-height: 100%;
-
+    font-weight: 700;
+    
 }
 h6{
     color: #7a7575;
     font-weight: 700;
+    margin-top: 0.2rem;
+    margin-bottom: 0.1rem;
 }
 h3{
     font-size: 0.8rem;
-    line-height: 0.001em;
+    
 }
 .topics-found{
     font-weight: 700;
@@ -84,6 +99,7 @@ h3{
 }
 .topic{
     font-size: 0.6rem ;
+    margin-top: 0.3rem;
 }
 .searchbar{
     display: flex;
@@ -91,9 +107,7 @@ h3{
     border: 0.5px solid #c0baba;
     border-radius: 10px;
     background-color: white;
-    padding: 0.1%;
-    margin: 1%;
-    align-items: center;
+    margin: 1rem;
 }
 input {
     border: none;
@@ -102,6 +116,8 @@ input {
 .search{
     display: flex;
     margin-left: 1%;
+    align-items: center;
+    gap: 0.5rem;
 
 }
 select{
@@ -109,13 +125,16 @@ select{
 }
 .sort-filter{
     display: flex;
+    gap: 1rem;
 }
 .dropdown{
     border-left:1px solid #c0baba;
     background-color: white;
-    padding: 4px;
+    padding: 0.7rem;
 }
-
+.stars{
+    margin-top: 1.5rem;
+}
 .stars ion-icon {
     color: rgb(238, 147, 28);
 }
@@ -124,16 +143,42 @@ select{
 }
 footer{
     text-align: center;
+    padding: 1rem;
     
 }
 footer ion-icon{
     color: #DC143C;
-    
+    margin-right: 12px;  
 }
 footer span{
     border: 1px solid black;
     border-radius: 70%;
     text-align: center;
-    width: 1%;
-    line-height: 1%;
+    padding: 0.2rem 0.5rem;
+    
+}
+.triangles{
+    position: relative;
+}
+.blue-triangle{
+    height: 50px;
+    clip-path: polygon(0 0,0 100%, 100% 0);
+    background: linear-gradient(to right,#066caa 0%,#04849d 20%,#03a08d 100%);
+
+
+}
+.green-triangle{
+    height: 50px;
+    clip-path: polygon(100% 0, 100% 100%, 0% 0%);
+    background-color: #03C180;
+    width: 100%;
+    position: absolute;
+
+
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
 }
