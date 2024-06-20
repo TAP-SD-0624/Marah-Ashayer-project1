@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="variables.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans">
+    
     <title>Home</title>
 </head>
 <body>
@@ -13,7 +14,8 @@
         <header>
         <h4>Web Topics</h4>
         <div class="buttons">
-            <button>
+            <button data-theme-toggle  
+                    aria-label="Change to light theme">
                 <ion-icon name="moon-outline"></ion-icon>
                 <span>Dark Mood</span>
             </button>
@@ -753,6 +755,7 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
