@@ -1,0 +1,44 @@
+/* Add these styles to your existing style.css file */
+.hidden {
+    display: none;
+}
+.favorites-section{
+    background-color: var(--bg-default);
+    position: fixed;
+    padding: 20px;
+    width: 100%;
+    height: 300px;
+    bottom: 0;
+    box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 -2px 4px -1px rgba(0, 0, 0, 0.06);
+    z-index: 10;
+    
+}
+.favorite-list{  
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 60px;
+    padding: 0;
+    justify-content: space-between;
+}
+.favorites-section h2{
+    font-size: 15px;
+    color: var(--body-text);
+    margin-bottom: 15px;
+    
+}
+.favorite-card h3{
+    color: var(--body-text);
+}
+.favorite-card img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+
+
+
+
+
+

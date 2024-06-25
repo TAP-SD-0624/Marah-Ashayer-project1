@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="variables.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="favorites.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans">
-    
     <title>Home</title>
 </head>
 <body>
     <div class="layout">
+        <div>
         <header>
         <h4>Web Topics</h4>
         <div class="buttons">
@@ -19,7 +20,7 @@
                 <ion-icon name="moon-outline"></ion-icon>
                 <span>Dark Mood</span>
             </button>
-            <button>
+            <button class="button-class" id="show-favorites">
                 <ion-icon name="heart-outline"></ion-icon>
                 <span>Favourites</span>
             </button>
@@ -38,7 +39,8 @@
                 </div>
             </div>
         </section>
-        
+    </div>
+        <div class="container">
             <main>
                 <section class="searchbar">
                 <div class="search">
@@ -48,7 +50,7 @@
 
                 <div class="sort-filter">
                     <div class="dropdown">
-                        <label for="choices">Sort by : </label>
+                        <label for="sort-by">Sort by : </label>
                         <div>
                             <select name="topics">
                                 <option value="zero">Default</option>
@@ -60,7 +62,7 @@
                     </div>
 
                     <div class="dropdown">
-                        <label for="choices">Filter by : </label>
+                        <label for="filter-by">Filter by : </label>
                         <div>
                             <select name="topics">
                                 <option value="zero">Default</option>
@@ -74,9 +76,10 @@
                 </section>
 
                 <div class="topics-found"><p>"24" Web Topics Found</p></div>
-
+                <div id="cards"></div>
+<!--
                 <section class="cards">
-                <div class="card">
+                <div class="card" >
                     <img src="Logos/html.png" alt="html logo">
                     <div class="info">
                         <p class="topic">Web Development Languages</p>
@@ -88,7 +91,7 @@
                             <ion-icon name="star"></ion-icon>
                             <ion-icon name="star-outline"></ion-icon>
                         </div>
-                        <h6>Author:Sarah Smith</h6>
+                        <h6 class="author-card">Author:Sarah Smith</h6>
                     </div>
                 </div>
 
@@ -163,7 +166,6 @@
                 </div>
 
                 </section>
-
 
                 <section class="cards">
 
@@ -742,20 +744,33 @@
 
 
                 </section>
+            -->
 
+            <section id="favorites-container" class="favorites-section hidden">
+                <div>
+                    <h2>My Favorite Topics</h2>
+                    <div class="favorite-list" id="favorites-list"></div>
+                </div>
+            </section>
 
             </main>
+            <footer>
+                <p>Developed with ❤️ © 2023</p>
+            </footer>
+        </div>
         
 
-    <footer>
-        <p> Developed with <ion-icon name="heart"> </ion-icon><span>c</span>  2023</p>
-    </footer>
+
 
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./details.js"></script>
+    <script type="module" src="./favorites.js"></script>
+
 
 </body>
 </html>
