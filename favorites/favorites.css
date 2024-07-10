@@ -1,0 +1,67 @@
+/* Add these styles to your existing style.css file */
+
+.favorites-section{
+    background-color: var(--bg_default);
+    position: sticky;
+    z-index: 10;
+    padding: 20px;
+    width: 100%;
+    bottom: 0; 
+    box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 -2px 4px -1px rgba(0, 0, 0, 0.06);   
+}
+.favorites-section .favorite-list{  
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 13px;
+    padding: 0;
+    justify-content: space-between;
+
+}
+.favorites-section h2{
+    font-size: 16px;
+    color: var(--body-text);
+    margin-bottom: 15px;
+    font-weight: 700;
+    
+}
+.favorites-section .favorite-card h3{
+    color: var(--body-text);
+    font-size: 15px;}
+.favorites-section .favorite-card img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;}
+.hidden {
+    display: none;
+}
+.favorites-section .favorite-card{
+    border: 0px solid var(--lines-color) ;
+    border-radius: 5%;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+.favorites-section .favorite-card .info{
+    padding: 8px;
+}
+.favorites-section .favorite-card .favorite-rating{
+    color: var(--star-color);
+
+}
+.favorites-section .favorite-list .card-link{
+    text-decoration: none;
+}
+/********************************************/
+
+@media only screen and (max-width:768px){
+    .favorites-section .favorite-list{
+        gap: 15px;
+    }
+}
+
+
+
+
+
+

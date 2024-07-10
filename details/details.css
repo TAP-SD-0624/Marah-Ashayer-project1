@@ -1,0 +1,208 @@
+/*Details CSS*/
+.main-and-footer{
+    flex:1;
+    background-color: var(--bg_body)}
+.details-section{
+    height: auto;
+    background-color: var(--details-bg);
+    position: relative;
+    padding: 16px 16px 16px 0px;}
+.details-section .details{
+    margin-top: 12px;
+    color: var(--details-color);  
+    padding: 0 10px;
+    flex:1; /**/
+}
+.body-container-details{
+    max-width: 900px;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.details-section .details .detail-category{
+    color: var(--brand-secondary);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.details-section .details .detail-description{
+    width: 60%;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5px;}
+
+.details-section .details .detail-rating{
+    color: var(--star-color);
+    margin-bottom: 12px;
+}
+    
+    /*Card In Details Page*/
+.details-card{
+    border: 1px solid #FFFFFF ;
+    width: 260px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #333333;
+    background-color: var(--details-color);
+    box-shadow: 0 2px 4px rgba(20, 20, 20, 0.1);
+    position: absolute; 
+    top: 0; 
+    right: 8%; 
+    z-index: 1;
+    margin-top: 10px;
+}
+.details-card .detail-img{
+    height: 160px;
+    object-fit: cover;
+}
+.details-card .under-image{
+    padding: 14px;
+}
+.details-card .detail-author {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.details-card .add-to-fav{
+    border: 1px solid #DDDDDD;
+    padding: 15px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+
+}
+.details-card .add-to-fav button {
+    background-color: var(--brand-secondary);
+    border: none;
+    color: var(--details-color);
+    padding: 10px;
+    cursor: pointer;
+    vertical-align: middle;
+    
+}
+.details-card .add-to-fav button span{
+    font-size: 16px;
+}
+.details-card .add-to-fav button ion-icon{
+    vertical-align: middle;
+    font-size: 23px;
+    margin-bottom: 3px;
+    margin-left: 6px;
+}
+.details-card a{
+    font-size: 15px;
+    margin-left: 5px;
+}
+.details-card .add-to-fav .interested-topic{
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+.details-card .add-to-fav .unlimited-credites{
+    font-size: 12px; 
+    color: #9c9c9c;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 7px;
+}
+
+/* Subtopics CSS*/
+.subtopics {
+    background-color: var(--bg_default);
+    margin-top: 20px;
+    width: 500px;
+    border: 1px solid var(--lines-color);
+    border-radius: 5px;
+    color: var(--body-text);
+    align-items: center;
+}
+.subtopics ion-icon{
+    color: #27b185;
+    margin: 8px 8px 8px 25px;
+    font-size: 20px ;
+    vertical-align: middle;
+    align-items: center;
+    
+}
+.subtopics ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.subtopics li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--lines-color);
+}
+
+.subtopics li:last-child {
+    border-bottom: none;
+}
+
+.subtopics h2 {
+    font-size: 24px;
+    padding: 11px 11px 11px 25px;
+    border-bottom: 1px solid var(--lines-color);
+}
+
+
+    /**********************************************************************************/
+
+@media only screen and (max-width:768px){
+    main{
+        display: flex;
+        flex-direction: column;
+        gap:25px;
+    }
+    .details-card {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 20px auto;
+    }
+    .details{
+        margin: 0;
+    }
+    .details p{
+        width: auto;
+    }
+    .table{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .details-section .details .detail-description{
+        width: 100%;    
+    }
+    .subtopics{
+        width: 100%;
+    }
+    .subtopics li{
+        font-size: 12px;
+        padding: 4px 0;
+        
+    }
+    li.detail-sub-item {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+    }
+    .subtopics li span{
+        display: block;
+        flex: 1;
+        word-wrap: break-word;
+    }
+
+    .subtopics ion-icon{
+        margin: 4px 10px;
+    }
+    .subtopics h2 {
+        font-size: 16px;
+        padding: 7px 7px 7px 15px;
+    }
+
+}

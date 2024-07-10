@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/favorites/favorites.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans">
+    <title>Home</title>
+</head>
+<body>
+    <div class="layout">
+        <div>
+        <header class="body-container">
+        <h4>Web Topics</h4>
+        <div class="buttons">
+            <button data-theme-toggle  
+                    aria-label="Change to light theme">
+                <!--<ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mood</span>-->
+                
+            </button>
+            <button id="show-favorites">
+                <ion-icon name="heart-outline" class="heart"></ion-icon>
+                <span>Favourites</span>
+            </button>
+        </div>
+        </header>
+
+        <section class="welcome-section ">
+            <div class="triangles">
+                <div class="green-triangle"></div>
+                <div class="blue-triangle"></div>
+            </div>
+            <div class="center-welcome-section">
+                <div class="welcome-text">
+                    <h3>Welcome to our website!</h3>
+                    <h6>We have a new design that's fresh,modern,and easy to use.</h6>
+                </div>
+            </div>
+        </section>
+    </div>
+        <div class="container">
+            <main class="body-container">
+                <section class="search-bar">
+                    <div class="search">
+                        <ion-icon name="search-outline"></ion-icon>
+                        <input type="text" id="search-input" placeholder="Search the website..">
+                    </div>
+
+                    <div class="sort-filter">
+                        <div class="dropdown" >
+                            <label for="sort-by" class="labels">Sort by:</label>
+                            <div>
+                                <select id="sort-by">
+                                    <option value="default">Default</option>
+                                    <option value="topic">Topic Title</option>
+                                    <option value="author">Author Name</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="dropdown" class="filter-by">
+                            <label for="filter-by" class="labels">Filter by:</label>
+                            <div>
+                                <select id="filter-by">
+                                    <option value="all">All Categories</option>
+                                    <!--
+                                    <option value="zero">Default</option>
+                                    <option value="two">2</option>
+                                    <option value="three">3</option>-->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="loading-indicator" class="loading hidden">Loading...</div>
+                <div class="topics-found"><p>"39" Web Topics Found</p></div>
+                <div id="cards"></div>
+
+                <section id="favorites-container" class="favorites-section hidden">
+                    <div>
+                        <h2>My Favorite Topics</h2>
+                        <div class="favorite-list" id="favorites-list"></div>
+                    </div>
+                </section>
+
+            </main>
+
+            <footer>
+                <p>Developed with ❤️ © 2023</p>
+            </footer>
+        </div>
+        
+
+
+
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="/details/details.js"></script>
+    <script type="module" src="/favorites/favorites.js"></script>
+
+
+</body>
+</html>

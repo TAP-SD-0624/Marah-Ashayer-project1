@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../variables.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="/favorites/favorites.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans">
+    <title>Details</title>
+</head>
+<body>
+    <div class="layout">
+        <div>
+        <header class="body-container">
+            <h4><a href='../index.html'>Web Topics</a></h4>
+            <div class="buttons">
+                <button data-theme-toggle  
+                        aria-label="Change to light theme">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span>Dark Mood</span>
+                </button>
+                <button id="show-favorites">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <span>Favourites</span>
+                </button>
+            </div>
+        </header>
+            
+        <section class="welcome-section">
+            <div class="triangles">
+                <div class="green-triangle"></div>
+                <div class="blue-triangle"></div>
+            </div>
+            <div class="center-welcome-section">
+                <div class="welcome-text">
+                    <h3>Welcome to our website!</h3>
+                    <h6>We have a new design that's fresh,modern,and easy to use.</h6>
+                </div>
+            </div>
+        </section>
+        </div>
+        
+        <div class="main-and-footer">
+        <main>
+            
+            <div class="details-section">
+            <section class="body-container-details">
+                <div class="details ">
+                    <h5 class="detail-category"></h5>
+                    <h2 class="detail-title"></h2>
+                    <div class="detail-rating"></div>
+                    <p class="detail-description"></p>
+                </div>
+
+                <div class="details-card">
+                    <img src="" alt="" class="detail-img">
+                    <div class="under-image">
+                        <p class="detail-author">
+                            <strong></strong> by<a href="#" class="details__link"></a>
+                        </p>
+                        <div class="add-to-fav">
+                            <p class="interested-topic">Interested about this topic?</p>
+                            <button class="add-to-favorites" id="addToFavorites"><span>Add to Favourites</span> <ion-icon name="heart-outline"></ion-icon></button>
+                            <p  class="unlimited-credites">Unlimited Credits</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+            <div class="table details-container body-container-details">
+                <section class="subtopics">
+                    <div class="detail-sub-topics">
+                        <h2 class="detail-sub-title"></h2>
+                        <ul>
+                            <li class="detail-sub-list"></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        
+
+            <section id="favorites-container" class="favorites-section hidden">
+                <div>
+                    <h2>My Favorite Topics</h2>
+                    <div class="favorite-list" id="favorites-list"></div>
+                </div>
+            </section>
+        </main>
+    
+        <footer>
+            <p>Developed with ❤️ © 2023</p>
+        </footer>
+    </div>
+</div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../script.js"></script>
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="details.js"></script>
+    <script type="module" src="/favorites/favorites.js"></script>
+</body>
+</html>
